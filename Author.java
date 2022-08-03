@@ -1,32 +1,39 @@
-package com.test.demo;
+package com.books.demo;
 
 public class Author {
 	
-	private String firstName;
-	private String lastName;
+	private String name;
+	private String email;
+	private char  gender;
 	
-	public Author() {
-		
+	
+	public Author(String name, String email, char gender ) {
+		this.name = name;
+		this.email = email;
+		this.gender = gender;
 	}
-public Author(String firstName , String lastName) {
-	this.firstName = firstName;
-	this.lastName  = lastName;
-} 
-public void setFirstName(String firstName) {
-	this.firstName = firstName ;
-}
-public void setLastName(String lastName) {
-	this.lastName = lastName ;
-}
-public String getFirstName() {
-	return firstName;
-}
-public String getLastName() {
-	return lastName;
-}
-@Override
-public String toString() {
-	return "Author[" + firstName + ", " + lastName + "]";
 
-}
-}
+	public String getName() {
+		return name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	@Override
+	public String toString() {
+		return "Author [name=" + name + ", email=" + email + ", gender=" + gender + "]";
+	}		
+
+	}
+
+
